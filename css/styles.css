@@ -138,7 +138,7 @@ body {
 }
 
 .main .banner {
-  height: 70vh;
+  height: 80vh;
   background-image: url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
@@ -290,6 +290,82 @@ body {
 
 .main .products__button:hover, .main .products__button:focus {
   background-color: #5511F2;
+}
+
+.footer .contact {
+  padding: 30px 0;
+  height: 80vh;
+}
+
+.footer .contact__wrapper {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.footer .contact__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #5511F2;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.footer .contact__form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.footer .contact__form label {
+  display: block;
+  font-size: 2rem;
+  color: #b10505;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.footer .contact__form input, .footer .contact__form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid #5511F2;
+  border-radius: 5px;
+}
+
+.footer .contact__form input:hover, .footer .contact__form input:focus, .footer .contact__form textarea:hover, .footer .contact__form textarea:focus {
+  background-color: #5511F2;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer .contact__form button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #322d89;
+  border: 0;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.footer .contact__form button:hover, .footer .contact__form button:focus {
+  background-color: #5511F2;
+}
+
+.footer .contact__icon-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.footer .contact__icon-container a {
+  color: black;
 }
 
 @media screen and (min-width: 600px) {

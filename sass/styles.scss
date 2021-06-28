@@ -137,7 +137,7 @@ body {
 
 .main {
     .banner {
-        height: 70vh;
+        height: 80vh;
         background-image: url('../images/banner.jpg');
         background-position: center;
         background-size: cover;
@@ -286,9 +286,78 @@ body {
             }
         }
     }
+}
 
+.footer {
     .contact {
-        
+        padding: 30px 0;
+        height: 80vh;
+        &__wrapper {
+            width: 90%;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 4rem;
+            font-weight: bold;
+            color: $auxiliar-primary-color;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        &__form {
+            max-width: 500px;
+            margin: 0 auto;
+            label {
+                display: block;
+                font-size: 2rem;
+                color: $dark-red;
+                font-weight: bold;
+                margin: 5px 0;
+            }
+            input, textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                font-size: 16px;
+                padding: 5px;
+                border: 2px solid $auxiliar-primary-color;
+                border-radius: 5px;
+                &:hover, &:focus {
+                    background-color:  $auxiliar-primary-color;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+            button {
+                font-family: "Ubuntu", sans-serif;
+                font-size: 1.6rem;
+                width: 100%;
+                padding: 10px 0;
+                background-color:$primary-color;
+                border: 0;
+                color: #fff;
+                margin-bottom: 20px;
+                border-radius: 5px;
+
+                &:hover, &:focus {
+                    background-color:  $auxiliar-primary-color;
+                }
+            }
+        }
+
+        &__icon-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 250px;
+            margin: 0 auto;
+            
+            a {
+                color: black;
+            }
+        }
     }
 }
 
