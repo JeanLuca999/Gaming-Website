@@ -1,0 +1,10 @@
+
+@keyframes led {
+    from {
+        text-shadow: 0 2px 10px red;
+    }
+
+    to {
+        text-shadow: 0 2px 10px blue;
+    }
+}
