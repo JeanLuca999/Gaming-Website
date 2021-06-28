@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-image: linear-gradient(to right, #b10505, #322d89);
+}
+
+.header .wrapper {
+  display: flex;
+}
+
+.header__ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  right: -150%;
+  width: 100%;
+  height: 100vh;
+  max-width: 400px;
+  background-image: linear-gradient(90deg, #322d89, #000000b9);
+  transition: 0.2s ease;
+}
+
+.header__ul--active {
+  display: flex;
+  right: 0% !important;
+}
+
+.header__li {
+  display: block;
+  width: 90%;
+  height: 30px;
+  border-bottom: 1px solid #5c20e9;
+  margin-bottom: 3px;
+}
+
+.header__li a {
+  display: block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #322d89;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.4s ease;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.header__li a:hover, .header__li a:focus {
+  background-color: #322d89;
+}
+
+.header__menu-mobile {
+  position: relative;
+  display: block;
+  z-index: 10;
+  width: 24px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.header__menu-mobile div {
+  width: 24px;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #fff;
+  transition: 0.2s ease;
+}
+
+.header__menu-mobile div:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.header__menu-mobile--active div:nth-child(1) {
+  position: relative;
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.header__menu-mobile--active div:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu-mobile--active div:nth-child(3) {
+  position: relative;
+  bottom: 3px;
+  transform: rotate(-45deg);
+}
+
+.header__logo a {
+  display: block;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    height: 70px;
+  }
+}
+
+.main__banner {
+  height: 70vh;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/*# sourceMappingURL=styles.css.map */
